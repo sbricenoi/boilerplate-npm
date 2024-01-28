@@ -3,10 +3,9 @@
 	"dependencies": {
 		"express": "^4.14.0"
 	},
-	"author": "Sebastian Briceño",
-	"main": "api/index.js",
+	"main": "server.js",
 	"scripts": {
-		"start": "node api/index.js"
+		"start": "node server.js"
 	},
 	"repository": {
 		"type": "git",
