@@ -9,7 +9,7 @@ var fs = require('fs');
 var express = require('express');
 var app = express();
 
-if (!process.env.DISABLE_XORIGIN) {
+/*if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
     var allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
     var origin = req.headers.origin || '*';
@@ -32,12 +32,12 @@ app.route('/_api/package.json')
       res.type('txt').send(data.toString());
     });
   });
-  
+  */
 app.route('/')
     .get(function(req, res) {
-		  res.sendFile(process.cwd() + '/views/index.html');
+		  //res.sendFile(process.cwd() + '/views/index.html');
     })
-
+/*
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
   res.status(404);
@@ -52,9 +52,9 @@ app.use(function(err, req, res, next) {
       .send(err.message || 'SERVER ERROR');
   }  
 })
-
+*/
 //Listen on port set in environment variable or default to 3000
 const listener = app.listen(process.env.PORT || 3000, function () {
-  console.log("Node.js listening on port " + listener.address().port);
+  console.log("Hello World");
 });
 
