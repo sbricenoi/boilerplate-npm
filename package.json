@@ -8,6 +8,7 @@
 	"description": "test descripción de proyecto",
 	"keywords": [ "descriptive", "test", "freecodecamp" ],
 	"license": "MIT",
+	"version": "1.0.0",
 	"scripts": {
 		"start": "node server.js"
 	},
