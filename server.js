@@ -33,9 +33,9 @@ app.route('/_api/package.json')
     });
   });
   */
-app.route('/')
-    .get(function(req, res) {
-		  //res.sendFile(process.cwd() + '/views/index.html');
+app.route('/').get(function(req, res) {
+      console.log("Hello World")
+		  res.sendFile(process.cwd() + '/views/index.html');
     })
 /*
 // Respond not found to all the wrong routes
