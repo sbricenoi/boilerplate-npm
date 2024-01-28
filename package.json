@@ -5,6 +5,7 @@
 	},
 	"main": "server.js",
 	"author": "Sebastian Briceño",
+	"description": "test descripción de proyecto",
 	"scripts": {
 		"start": "node server.js"
 	},
