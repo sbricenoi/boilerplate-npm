@@ -6,6 +6,7 @@
 	"main": "server.js",
 	"author": "Sebastian Briceño",
 	"description": "test descripción de proyecto",
+	"keywords": [ "descriptive", "test", "project" ],
 	"scripts": {
 		"start": "node server.js"
 	},
