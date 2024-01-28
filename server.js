@@ -39,6 +39,10 @@ app.route('/').get(function(req, res) {
       console.log("Hello World")
 		  res.sendFile(process.cwd() + '/public/index.html');
     })
+app.route('/public').get(function(req, res) {
+      console.log("Hello World")
+		  res.sendFile(process.cwd() + '/public/index.html');
+    })
 /*
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
